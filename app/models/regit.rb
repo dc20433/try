@@ -1,0 +1,2 @@
+class Regit < ApplicationRecord
+end

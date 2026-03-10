@@ -1,0 +1,13 @@
+<div class="container text-center mt-4">
+<% content_for :title, "New regit" %>
+
+<h1>Registration</h1>
+
+<%= render "form", regit: @regit %>
+
+<br>
+
+<div>
+  <%= link_to "Back to regits", regits_path %>
+</div>
+</div>

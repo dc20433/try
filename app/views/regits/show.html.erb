@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @regit %>
+
+<div>
+  <%= link_to "Edit this regit", edit_regit_path(@regit) %> |
+  <%= link_to "Back to regits", regits_path %>
+
+  <%= button_to "Destroy this regit", @regit, method: :delete %>
+</div>

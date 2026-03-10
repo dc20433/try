@@ -1,0 +1,12 @@
+<% content_for :title, "Editing regit" %>
+
+<h1>Editing regit</h1>
+
+<%= render "form", regit: @regit %>
+
+<br>
+
+<div>
+  <%= link_to "Show this regit", @regit %> |
+  <%= link_to "Back to regits", regits_path %>
+</div>
