@@ -12,7 +12,12 @@
 
   <% end %>
 
- <%= Regit.find(1).name %>
+
+<%= Regit.find(params[:regit_id]).name %>
+</br>
+<%= link_to 'New Chart', new_regit_chart_path, class: "btn btn-sm 
+btn-outline-dark outline-double rounded-pill px-2 py-0 m-1 
+fw-bold" %>
 
   <div class="field">
     <%= f.label :t_date %><br />
