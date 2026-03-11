@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_03_10_214734) do
+ActiveRecord::Schema[8.1].define(version: 2026_03_11_011841) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "charts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "obj"
+    t.bigint "regit_id", null: false
+    t.string "subj"
+    t.string "t_date"
+    t.datetime "updated_at", null: false
+    t.index ["regit_id"], name: "index_charts_on_regit_id"
+  end
 
   create_table "regits", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -30,4 +40,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_10_214734) do
     t.string "lastname"
     t.datetime "updated_at", null: false
   end
+
+  add_foreign_key "charts", "regits"
 end
