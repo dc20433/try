@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+ruby "3.4.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.1.2"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -68,3 +69,5 @@ end
 gem 'dotenv-rails'
 gem "bootstrap", "~> 5.3.3"
 gem "dartsass-rails"
+
+gem 'nested_scaffold'
